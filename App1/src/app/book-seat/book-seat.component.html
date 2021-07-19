@@ -1,0 +1,38 @@
+<h3>Book Seat Here</h3>
+
+
+  <div class="container">
+    <label for="trainid"><b>Train Id/Number</b></label>
+    <input type="text" placeholder="ig-1234" [(ngModel)]="id" required><br>
+   
+
+    <label for="source"><b>From</b></label>
+    <input type="text" placeholder="Enter Source Station" [(ngModel)]="source" required="source" required>
+   
+    <!-- <span style='font-size:60px;' class="right">&#8645;</span> -->
+    <label for="destination"><b>To</b></label>
+    <input type="text" placeholder="Enter Destination Station" [(ngModel)]="destination"  id="destination" required> 
+  
+
+   
+
+    <p>Select class:</p>
+      <input type="radio" id="category" name="category" value="AC">
+      <label for="ac">AC</label><br>
+      <input type="radio" id="category" name="category" value="Sleeper">
+      <label for="sleeper">Sleeper</label><br>
+      <input type="radio" id="category" name="category" value="Chair">
+      <label for="chair">Chair</label><br>
+
+    <br>
+    <label for="amount">Amount</label>  
+    <input type="text" id="amount" name="amount" value="970" readonly><br><br>
+     
+  
+    <button (click)="save()" class="btn btn-primary">Book Ticket</button>
+
+    
+  
+
+  
+  
